@@ -58,7 +58,8 @@ func main() {
 
 	var weather101 hourlyWeather
 	json.Unmarshal(bodyBytes, &weather101)
-	fmt.Println(" Hourly Weather Type %+v\n", weather101)
-	fmt.Printf(" Temperature on Sunday %+v\n", weather101.Properties)
+	fmt.Println(" Hourly Weather Type", weather101.Type)
+	fmt.Println(" Temperature on Sunday", weather101.Properties.Elevation.Value)
+	fmt.Println("End")
 
 }
