@@ -28,7 +28,7 @@ func main() {
 		if attempts > 5 {
 			fmt.Println("You've used over 5 turns to guess the secret number. The secret number is", secretNumber)
 		}
-		input, err := reader.ReadString('\n')
+		input, err :=w reader.ReadString('\n')
 		if err != nil {
 			fmt.Println("An error occured while reading input. Please try again", err)
 			return
